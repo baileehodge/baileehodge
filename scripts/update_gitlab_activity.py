@@ -36,8 +36,8 @@ def update_readme(output_path, stats):
     commits, approvals, total_merged = stats
     summary = (f"### 🔧 Recent GitLab Activity (bailee2)\n"
                f"- 📝 {commits} commits this week\n"
-               f"- ✅ {approvals} merge requests approved this week\n"
-               f"- 🎉 {total_merged} total merged in `slurm` group\n")
+               # f"- ✅ {approvals} merge requests approved this week\n"
+               f"- 🎉 {total_merged} total approved merge requests to `Slurm` HPC software\n")
 
     # Read existing README
     with open(output_path, 'r') as f:
